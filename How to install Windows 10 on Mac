@@ -1,0 +1,15 @@
+/*
+         How to use USB Flash Drive to install Windows 10 in Mac...
+         1. Prepare a USB Flash Drive with 16GB's storage at least,which has been already maked into a Windows 10 mode's PE.
+         2. Prepare Windows 10.iso and MacOS Mojave.dmg in the USB.
+         3. Mac environment:Use bootcamp to get drivers in USB.
+         4. Reboot the Mac with 'option'key,then select PE.
+         5. Entered PE,free the wasted bootcamp diskpart and recover it to his original place.
+         6. Use DISM++x64.exe to install Windows 10.iso file to SSD,select 'add boot' section and format.
+         7. Reboot with 'option' key,and select windows,pass through the OOBE without network.
+         8. Install the basic drivers by bootcamp's drivers in USB,reboot Windows 10.
+         9. Connect to the network to activate Windows and install further drivers and applications,all down!
+         
+         That's all,and all the tools are available on the Internet,I won't afford here.
+         
+         */
