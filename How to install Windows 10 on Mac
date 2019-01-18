@@ -1,15 +1,27 @@
-/*
-         How to use USB Flash Drive to install Windows 10 in Mac...
-         1. Prepare a USB Flash Drive with 16GB's storage at least,which has been already maked into a Windows 10 mode's PE.
-         2. Prepare Windows 10.iso and MacOS Mojave.dmg in the USB.
-         3. Mac environment:Use bootcamp to get drivers in USB.
-         4. Reboot the Mac with 'option'key,then select PE.
-         5. Entered PE,free the wasted bootcamp diskpart and recover it to his original place.
-         6. Use DISM++x64.exe to install Windows 10.iso file to SSD,select 'add boot' section and format.
-         7. Reboot with 'option' key,and select windows,pass through the OOBE without network.
-         8. Install the basic drivers by bootcamp's drivers in USB,reboot Windows 10.
-         9. Connect to the network to activate Windows and install further drivers and applications,all down!
+/*	
+    How to use a USB Flash Drive to install Windows 10 on outer SSD for Mac.
+    First Part:Install Windows 10 on outer SSD for Mac
+    1. Prepare a USB Flash Drive with 16GB's storage at least,formated to 'exfat'.
+    2. Prepare Windows 10.iso and MacOS Mojave.dmg in the USB,a Mac and a Windows device.
+    3. Mac environment:Use bootcamp to get Mac drivers in Windows.
+    4. In bootcamp App,select Windows 10.iso and the USB as targets,then format.
+    5. All the drivers will be downloaded into the USB,copy 'bootcamp' files as backup.
+    6. Windows environment:write the USB into a Windows 10 mode's PE.
+    7. Copy Windows 10.iso,MacOS Mojave.dmg and 'bootcamp' files into the USB.
+    8. Switch USB to Mac,reboot the Mac with 'option'key,then select EFI(PE on USB).
+    9. Entered PE,free the wasted bootcamp storege on Mac and restore to original state.
+    10. Use DISM++ to install Windows 10.iso to SSD,select 'add boot' section and format.
+    11. Reboot with 'option' key,and select windows,pass through the OOBE without network.
+    12. Install the basic drivers by bootcamp's drivers in USB.
+    13. Reboot Windows and connect to network to activate Windows.
+    14. Install further drivers and applications,all down!
          
-         That's all,and all the tools are available on the Internet,I won't afford here.
-         
-         */
+    Second Part:Install MacOS on SSD
+    1. Use disk manager on Windows to allocate Mac space in SSD.
+    2. Compress a new empty volume file without format,then set volume label.
+    3. Switch to Mac environment,click Mojave.dmg on desktop.
+    4. Select the empty volume as target,follow the install wizard to complete.
+    5. Mojave will be available after reboot. 
+
+    That's all,and all the tools above are available on the Internet,I won't afford here.
+*/
